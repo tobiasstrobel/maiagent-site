@@ -1,0 +1,80 @@
+:root {
+  color-scheme: light dark;
+  --bg: #f7f5f1;
+  --fg: #1a1a1a;
+  --muted: #5c5c5c;
+  --link: #0b57d0;
+  --border: #d9d4cb;
+  --max: 40rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --fg: #ececec;
+    --muted: #a8a8a8;
+    --link: #8ab4f8;
+    --border: #333;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.55;
+}
+
+main {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.75rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 2rem 0 0.5rem;
+}
+
+p,
+li {
+  color: var(--fg);
+}
+
+p.lead,
+.muted {
+  color: var(--muted);
+}
+
+a {
+  color: var(--link);
+}
+
+nav {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+}
